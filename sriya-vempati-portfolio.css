@@ -1260,3 +1260,34 @@ footer a:hover { color: var(--accent); }
   color:          var(--ink3);
   white-space:    nowrap;
 }
+
+@media (max-width: 768px) {
+
+  /* ── Filter bar — scrolls horizontally instead of wrapping ── */
+  .filter-bar {
+    overflow-x:     auto;
+    flex-wrap:      nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;        /* hides scrollbar on Firefox */
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;                /* hides scrollbar on Chrome/Safari */
+  }
+
+  .filter-btn {
+    flex:       0 0 auto;         /* stops buttons shrinking */
+    white-space: nowrap;          /* stops text wrapping inside button */
+    padding:    0.85rem 1.25rem;
+  }
+
+  /* ── Project grid — single column ── */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card.wide {
+    grid-column: span 1;
+  }
+
+}
