@@ -1298,7 +1298,24 @@ footer a:hover { color: var(--accent); }
     padding:     0.85rem 1.1rem;
     font-size:   0.7rem;
   }
+.about-section {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
 
+  /* make sure the visual comes first */
+  .about-visual {
+    order: 1;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-section > div:last-child {
+    order: 2;
+    width: 100%;
+  }
+}
   /* ── Project grid — full width single column ── */
   .projects-grid {
     grid-template
+  }
