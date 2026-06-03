@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sriya Vempati — Design Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sriya-vempati-portfolio.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Sriya Vempati</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg"></div>
+  <p class="hero-eyebrow">Design Portfolio · 2025</p>
+  <h1 class="hero-name">Sriya<br><em>Vempati</em></h1>
+  <p class="hero-sub">UX Designer & Visual Artist crafting experiences at the intersection of culture, craft, and clarity.</p>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span>User Experience</span><span class="dot">✦</span>
+    <span>Graphic Design</span><span class="dot">✦</span>
+    <span>Typography</span><span class="dot">✦</span>
+    <span>Illustration</span><span class="dot">✦</span>
+    <span>Brand Identity</span><span class="dot">✦</span>
+    <span>Visual Systems</span><span class="dot">✦</span>
+    <span>User Experience</span><span class="dot">✦</span>
+    <span>Graphic Design</span><span class="dot">✦</span>
+    <span>Typography</span><span class="dot">✦</span>
+    <span>Illustration</span><span class="dot">✦</span>
+    <span>Brand Identity</span><span class="dot">✦</span>
+    <span>Visual Systems</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- WORK SECTION -->
+<section id="work">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Selected Work</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="filter-bar reveal" id="filterBar">
+    <button class="filter-btn active" data-filter="all"><span>All</span></button>
+    <button class="filter-btn" data-filter="ux"><span>User Experience</span></button>
+    <button class="filter-btn" data-filter="graphic"><span>Graphic Design</span></button>
+    <button class="filter-btn" data-filter="typography"><span>Typography</span></button>
+    <button class="filter-btn" data-filter="brand-identity"><span>Brand Identity</span></button>
+    <button class="filter-btn" data-filter="illustration"><span>Illustration</span></button>
+  </div>
+
+  
+  <!-- CYLINDER CAROUSEL -->
+   <section class="carousel-section"></section>
+  <div class="cc-wrap" id="ccWrap">
+    <div class="cc-scene" id="ccScene">
+      <div class="cc-cylinder" id="ccCylinder">
+
+        <!-- Goldsfield -->
+        <div class="project-card wide" data-cat="ux" data-project="goldsfield">
+          <div class="project-card-placeholder">
+            <img class="project-card-img" src="images/goldfielsSlideshow.png" alt="Goldfield">
+            <span>[ Add Goldsfield Hero Image ]</span>
+          </div>
+          <span class="project-card-label">UX Design</span>
+          <div class="project-overlay">
+            <p class="project-tag">User Experience</p>
+            <h3 class="project-name">Goldsfield Ghost Town</h3>
+            <p class="project-desc">A full digital redesign of an Old West destination—balancing modern UX with historic character.</p>
+            <button class="project-arrow" onclick="openModal('goldsfield')">→</button>
+          </div>
+        </div>
+
+        <!-- Bottle Riot -->
+        <div class="project-card" data-cat="graphic" data-project="bottleriot">
+          <div class="project-card-placeholder">
+            <img class="project-card-img" src="images/bottleriotcover.png" alt="Bottle Riot">
+            <span>[ Add Bottle Riot Image ]</span>
+          </div>
+          <span class="project-card-label">Graphic Design</span>
+          <div class="project-overlay">
+            <p class="project-tag">Graphic Design · Brand Identity</p>
+            <h3 class="project-name">Bottle Riot</h3>
+            <p class="project-desc">Honorable Mention — Graphis 2023. A bold rebrand for an Asheville wine bar and listening lounge.</p>
+            <button class="project-arrow" onclick="openModal('bottleriot')">→</button>
+          </div>
+        </div>
+
+        <!-- Urban Indian -->
+        <div class="project-card" data-cat="graphic" data-project="urbanindian">
+          <div class="project-card-placeholder">
+            <img class="project-card-img" src="images/tuicover.png" alt="The Urban Indian">
+            <span>[ Add Urban Indian Image ]</span>
+          </div>
+          <span class="project-card-label">Graphic Design</span>
+          <div class="project-overlay">
+            <p class="project-tag">Graphic Design · Brand Identity</p>
+            <h3 class="project-name">The Urban Indian</h3>
+            <p class="project-desc">A contemporary fashion label fusing traditional Indian aesthetics with modern streetwear.</p>
+            <button class="project-arrow" onclick="openModal('urbanindian')">→</button>
+          </div>
+        </div>
+
+        <!-- Sconehenge -->
+        <div class="project-card" data-cat="illustration" data-project="sconehenge">
+          <div class="project-card-placeholder">
+            <span>[ Add Sconehenge Image ]</span>
+          </div>
+          <span class="project-card-label">Illustration</span>
+          <div class="project-overlay">
+            <p class="project-tag">Illustration</p>
+            <h3 class="project-name">Sconehenge</h3>
+            <p class="project-desc">Add your project description here.</p>
+            <button class="project-arrow" onclick="openModal('sconehenge')">→</button>
+          </div>
+        </div>
+
+        <!-- Bath & Body Works -->
+        <div class="project-card" data-cat="graphic" data-project="bbw">
+          <div class="project-card-placeholder">
+            <span>[ Add Bath &amp; Body Works Image ]</span>
+          </div>
+          <span class="project-card-label">Graphic Design</span>
+          <div class="project-overlay">
+            <p class="project-tag">Graphic Design · Packaging</p>
+            <h3 class="project-name">Bath &amp; Body Works Summer Line</h3>
+            <p class="project-desc">Add your project description here.</p>
+            <button class="project-arrow" onclick="openModal('bbw')">→</button>
+          </div>
+        </div>
+
+        <!-- Work / Risograph -->
+        <div class="project-card" data-cat="typography" data-project="work">
+          <div class="project-card-placeholder">
+            <span>[ Add Risograph Poster Image ]</span>
+          </div>
+          <span class="project-card-label">Typography</span>
+          <div class="project-overlay">
+            <p class="project-tag">Typography · Print</p>
+            <h3 class="project-name">Work — Risograph</h3>
+            <p class="project-desc">A poster and animation created with a risograph, referencing Corita's 10 Rules.</p>
+            <button class="project-arrow" onclick="openModal('work')">→</button>
+          </div>
+        </div>
+
+        <!-- VIBE Lab -->
+        <div class="project-card" data-cat="brand-identity" data-project="new">
+          <div class="project-card-placeholder" style="flex-direction:column;gap:0.5rem;">
+            <span style="font-size:2rem;opacity:0.3;">+</span>
+            <span class="project-card-label">Brand Identity</span>
+            <span>Add New Project</span>
+          </div>
+          <div class="project-overlay">
+            <p class="project-tag">Brand Identity</p>
+            <h3 class="project-name">VIBE Lab</h3>
+            <p class="project-desc">A newsletter for Designers to connect. This project showcases the branding for this project.</p>
+            <button class="project-arrow" onclick="openModal('new')">→</button>
+          </div>
+        </div>
+
+      </div><!-- /cc-cylinder -->
+    </div><!-- /cc-scene -->
+    <span class="cc-hint">scroll or drag to spin</span>
+  </div><!-- /cc-wrap -->
+
+</section><!-- /work -->
+
+
+<!-- ── CAROUSEL SCRIPT ── -->
+<script>
+  (function () {
+    const CONFIG = {
+      radius:          260,
+      scrollThreshold: 60,
+      dragPxPerDeg:    0.4,
+      snapDuration:    0.55,
+      perspective:     1000,
+    };
+
+    const cylinder   = document.getElementById('ccCylinder');
+    const scene      = document.getElementById('ccScene');
+    const wrap       = document.getElementById('ccWrap');
+
+    scene.style.perspective = CONFIG.perspective + 'px';
+
+    const N          = cylinder.children.length;
+    const ANGLE_STEP = 360 / N;
+
+    // Wrap each project-card in a 3D face and place it on the cylinder
+    Array.from(cylinder.children).forEach((card, i) => {
+      const face = document.createElement('div');
+      face.className = 'cc-card';
+      face.style.transform = `rotateX(${-(i * ANGLE_STEP)}deg) translateZ(${CONFIG.radius}px)`;
+      cylinder.insertBefore(face, card);
+      face.appendChild(card);
+    });
+
+    let totalAngle     = 0;
+    let scrollAcc      = 0;
+    let isDragging     = false;
+    let dragStartY     = 0;
+    let dragStartAngle = 0;
+
+    function render(animate) {
+      cylinder.style.transition = animate
+        ? `transform ${CONFIG.snapDuration}s cubic-bezier(0.25,0.46,0.45,0.94)`
+        : 'none';
+      cylinder.style.transform = `rotateX(${totalAngle}deg)`;
+    }
+
+    function snapToNearest() {
+      totalAngle = Math.round(totalAngle / ANGLE_STEP) * ANGLE_STEP;
+      render(true);
+    }
+
+    function spinBy(steps) {
+      totalAngle += steps * ANGLE_STEP;
+      render(true);
+    }
+
+    wrap.addEventListener('wheel', e => {
+      e.preventDefault();
+      scrollAcc += e.deltaY;
+      if (Math.abs(scrollAcc) >= CONFIG.scrollThreshold) {
+        spinBy(Math.sign(scrollAcc));
+        scrollAcc = 0;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('mousedown', e => {
+      isDragging     = true;
+      dragStartY     = e.clientY;
+      dragStartAngle = totalAngle;
+      cylinder.style.transition = 'none';
+    });
+
+    window.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      totalAngle = dragStartAngle + (e.clientY - dragStartY) * CONFIG.dragPxPerDeg;
+      render(false);
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      snapToNearest();
+    });
+
+    let touchStartY = 0, touchStartAngle = 0;
+
+    wrap.addEventListener('touchstart', e => {
+      touchStartY     = e.touches[0].clientY;
+      touchStartAngle = totalAngle;
+      cylinder.style.transition = 'none';
+    }, { passive: true });
+
+    wrap.addEventListener('touchmove', e => {
+      totalAngle = touchStartAngle + (e.touches[0].clientY - touchStartY) * CONFIG.dragPxPerDeg;
+      render(false);
+    }, { passive: true });
+
+    wrap.addEventListener('touchend', () => snapToNearest(), { passive: true });
+
+    render(false);
+  })(); // wrapped in IIFE so variables don't clash with the rest of your page JS
+</script>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg2);">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-section">
+    <div class="about-visual reveal">
+      <div class="about-visual-placeholder">[ Add your photo ]</div>
+   </div>
+    <div class="reveal">
+      <div class="about-logo">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+      <p class="about-label">Designer & Visual Artist</p>
+      <p class="about-bio">I'm Sriya—a designer who believes that <em>every pixel carries a point of view.</em> I work across UX, branding, and visual communication to create work that is culturally resonant and visually bold.</p>
+      <p class="about-detail">Based in the US · Currently pursuing design studies · Passionate about the intersection of cultural heritage and contemporary visual language.</p>
+      <div class="skills-row">
+        <span class="skill-tag">UX Research</span>
+        <span class="skill-tag">Brand Identity</span>
+        <span class="skill-tag">Typography</span>
+        <span class="skill-tag">Illustration</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Adobe Suite</span>
+        <span class="skill-tag">Risograph</span>
+        <span class="skill-tag">Visual Systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div class="reveal">
+    <p class="contact-big">Let's make<br>something <em>together.</em></p>
+  </div>
+  <div class="reveal">
+    <a href="mailto:sreesriyavempati@gmail.com" class="contact-link">Get in Touch →</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2025 Sriya Vempati</span>
+  <span>
+    <a href="https://sreesriyavempati.myportfolio.com/" target="_blank">Original Portfolio</a>
+    &nbsp;·&nbsp;
+    <a href="#top">Back to top ↑</a>
+  </span>
+</footer>
+
+
+<!-- MODALS -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal(event)">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- MODAL TEMPLATES (hidden) -->
+
+<!-- ── GOLDSFIELD ── -->
+<template id="tpl-goldsfield">
+  <div class="modal-header">
+    <p class="modal-eyebrow">User Experience · 2025</p>
+    <h2 class="modal-title">Goldsfield Ghost Town</h2>
+    <p class="modal-subtitle">Website Redesign — UX/UI</p>
+  </div>
+  <div class="modal-body">
+
+    <!-- SLIDESHOW lives here, inside modal-body -->
+  
+
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">The Goldfield Ghost Town redesign was a focused effort to modernize the site's digital presence while preserving the town's historic character. The brief prioritized three outcomes: make trip-planning fast and intuitive, strengthen the site's visual identity so it reads like a destination, and deliver a responsive, accessible experience for visitors on mobile and desktop.</p>
+  
+    <div class="slideshow" id="goldsfieldSlideshow">
+      <img class="slide active" src="images/gold1.jpeg" alt="Goldsfield slide 1">
+      <img class="slide" src="images/gold2.png" alt="Goldsfield slide 2">
+      <img class="slide" src="images/gold3.png" alt="Goldsfield slide 3">
+      <button class="slide-btn prev">‹</button>
+      <button class="slide-btn next">›</button>
+    </div>
+    <p class="modal-section-head">Research &amp; Discovery</p>
+    <p class="modal-text">The discovery phase established problems to solve and opportunities to amplify. We performed a content and IA audit, identifying duplicated pages, missing hierarchies, and unclear navigation. We then conducted a card-sorting exercise with potential users from diverse backgrounds—revealing that Camp Ground, Attractions, and Group Activities were naturally grouped together. A competitive Brand Matrix gave us context about Goldfield's position in the activity-center space.</p>
+
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Add research/personas image ]</div>
+      <div class="placeholder">[ Add card sort or IA diagram ]</div>
+    </div>
+
+    <p class="modal-section-head">Design System</p>
+    <p class="modal-text">The visual system leans on an earthy palette, layered textures, and type choices that nod to vintage Western signage—applied with modern typographic hierarchy and generous spacing. Component work included a responsive hero module with strong CTAs, an events calendar that prioritizes upcoming dates, modular attraction pages, and a compact ticketing summary that reduces friction.</p>
+
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Add UI mockup image ]</div>
+      <div class="placeholder">[ Add style guide or components ]</div>
+    </div>
+
+    <a class="modal-link" href="https://www.figma.com/proto/eGUdyVUvu0KW5XrQGBx5IC/Untitled?node-id=2012-793&p=f&t=cxhqM2o90Qsh5JH5-1&scaling=scale-down&content-scaling=fixed&page-id=2012%3A568" target="_blank">View Figma Prototype →</a>
+
+  </div>
+</template>
+
+<!-- ── BOTTLE RIOT ── -->
+<template id="tpl-bottleriot">
+  <div class="modal-header">
+    <p class="modal-eyebrow">Graphic Design · Brand Identity · 2025</p>
+    <h2 class="modal-title">Bottle Riot</h2>
+    <p class="modal-subtitle">Honorable Mention — Graphis 2023</p>
+  </div>
+  <div class="modal-body">
+    <img src="images/bottleriot1.png" alt="Bottle Riot Brand Board">
+    <img src="images/bottleriot2.png" alt="Bottle Riot Brand Board">
+
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">A complete rebrand of Bottle Riot, a bar and wine shop in Asheville known for its eclectic character and vibrant community. The challenge was to create a visual system that communicated the brand's rebellious, creative spirit while feeling refined enough to represent its curated wine selection and lively social atmosphere.</p>
+
+    <p class="modal-section-head">Research</p>
+    <p class="modal-text">The research phase began with an audit of existing brand assets. I studied the local market and other independent wine bars, focusing on how design signals atmosphere, price point, and community values. Bottle Riot occupied a gap: many competitors leaned too polished or too casual, leaving space for a brand that could be bold and rebellious while still maintaining sophistication.</p>
+
+    <p class="modal-section-head">Design Direction</p>
+    <p class="modal-text">Mood boards explored bright, contrasting color palettes conveying energy and type treatments combining boldness with legibility. Logo explorations played with layered typography, sharp edges, and dynamic arrangements. Supporting brand elements—textures, patterns, graphic treatments—evoked the raw energy of a gathering space celebrating individuality and community.</p>
+
+    <div class="modal-image-grid-br">
+      <div class="img-stationary">
+        <img src="images/BottleRiotStationary.jpg" alt="Stationary">
+        <div class="overlay"></div>
+      </div>
+      <div class="img-logo">
+        <img src="images/bottleriotlogo.png" alt="Logo">
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <a class="modal-link" href="https://www.bottleriot.com/" target="_blank">Visit Bottle Riot →</a>
+  </div>
+</template>
+
+<!-- ── URBAN INDIAN ── -->
+<template id="tpl-urbanindian">
+  <div class="modal-header">
+    <p class="modal-eyebrow">Graphic Design · Brand Identity · 2025</p>
+    <h2 class="modal-title">The Urban Indian</h2>
+    <p class="modal-subtitle">Full Brand Identity System</p>
+  </div>
+  <div class="modal-body">
+    <img src="images/tuihero.png" alt="tuihero">
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">A full brand identity redesign for The Urban Indian, a contemporary fashion label blending traditional Indian aesthetics with modern streetwear. The goal was to design a brand system that celebrated cultural heritage while feeling bold, versatile, and relevant to a global urban audience. Deliverables included three brand boards with at least seven applications of the branding.</p>
+
+    <p class="modal-section-head">Research &amp; Discovery</p>
+    <p class="modal-text">The research began with an audit of fashion and lifestyle brands that fuse culture with modernity—many leaned too minimalist (losing cultural depth) or too traditional (lacking contemporary appeal). I studied Indian textiles, block-printing motifs, and multilingual typographic traditions. From this, I defined three key design principles: Cultural authenticity, Modern accessibility, and Scalable adaptability.</p>
+    <img src="images/tui1.jpg" alt="tui1">   
+    <img src="images/tui2.jpg" alt="tui2">
+    <img src="images/tui3.jpg" alt="tui3">
+
+    
+  </div>
+</template>
+
+<!-- ── SCONEHENGE ── -->
+<template id="tpl-sconehenge">
+  <div class="modal-header">
+    <p class="modal-eyebrow">Illustration · 2025</p>
+    <h2 class="modal-title">Sconehenge</h2>
+    <p class="modal-subtitle">[ Add subtitle / medium ]</p>
+  </div>
+  <div class="modal-body">
+    <div class="modal-image-placeholder">[ Add Sconehenge hero image ]</div>
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">[ Add your project description here. Describe the concept, process, and what you created. ]</p>
+    <p class="modal-section-head">Process</p>
+    <p class="modal-text">[ Add your process notes, sketches description, tools used, etc. ]</p>
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Add process image ]</div>
+      <div class="placeholder">[ Add final image ]</div>
+    </div>
+  </div>
+</template>
+
+<!-- ── BATH & BODY WORKS ── -->
+<template id="tpl-bbw">
+  <div class="modal-header">
+    <p class="modal-eyebrow">Graphic Design · Packaging · 2025</p>
+    <h2 class="modal-title">Bath &amp; Body Works Summer Line</h2>
+    <p class="modal-subtitle">[ Add subtitle / deliverables ]</p>
+  </div>
+  <div class="modal-body">
+    <div class="modal-image-placeholder">[ Add Bath &amp; Body Works hero image ]</div>
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">[ Add your project description here — the brief, scope, and what the project involved. ]</p>
+    <p class="modal-section-head">Design Direction</p>
+    <p class="modal-text">[ Add your design process, color choices, typography, and concept development. ]</p>
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Add image 1 ]</div>
+      <div class="placeholder">[ Add image 2 ]</div>
+    </div>
+  </div>
+</template>
+
+<!-- ── WORK / RISOGRAPH ── -->
+<template id="tpl-work">
+  <div class="modal-header">
+    <p class="modal-eyebrow">Typography · Print · 2025</p>
+    <h2 class="modal-title">Work — Risograph</h2>
+    <p class="modal-subtitle">Poster &amp; Animation</p>
+  </div>
+  <div class="modal-body">
+    <div class="modal-image-placeholder">[ Add risograph poster image ]</div>
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">This poster and animation were created using a risograph. To complete this project, I learned many new Photoshop strategies and features, and how to use the risograph. The animation itself is a reference to the 7th Rule in Corita's 10 Rules.</p>
+    <p class="modal-section-head">Process</p>
+    <p class="modal-text">[ Add notes on your risograph process, color separations, printing decisions, and what the 7th Rule means to your work. ]</p>
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Add poster close-up ]</div>
+      <div class="placeholder">[ Add animation still ]</div>
+    </div>
+    <a class="modal-link" href="https://www.corita.org/tenrules" target="_blank">Corita's 10 Rules →</a>
+  </div>
+</template>
+
+
+<!--VIBE Lab-->
+<template id="tpl-new">
+  <div class="modal-header">
+    <p class="modal-eyebrow">[ Category ] · 2025</p>
+    <h2 class="modal-title">New Project</h2>
+    <p class="modal-subtitle">[ Add subtitle ]</p>
+  </div>
+  <div class="modal-body">
+    <div class="modal-image-placeholder">[ Add hero image ]</div>
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">[ Add project description here. ]</p>
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Image 1 ]</div>
+      <div class="placeholder">[ Image 2 ]</div>
+    </div>
+  </div>
+</template> 
+
+
+<!-- ── NEW PROJECT 
+<template id="tpl-new">
+  <div class="modal-header">
+    <p class="modal-eyebrow">[ Category ] · 2025</p>
+    <h2 class="modal-title">New Project</h2>
+    <p class="modal-subtitle">[ Add subtitle ]</p>
+  </div>
+  <div class="modal-body">
+    <div class="modal-image-placeholder">[ Add hero image ]</div>
+    <p class="modal-section-head">Project Outline</p>
+    <p class="modal-text">[ Add project description here. ]</p>
+    <div class="modal-image-grid">
+      <div class="placeholder">[ Image 1 ]</div>
+      <div class="placeholder">[ Image 2 ]</div>
+    </div>
+  </div>
+</template> 
+── -->
+
+<script>
+  // ── Cursor ──
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top  = e.clientY + 'px';
+  });
+  document.querySelectorAll('a, button, .project-card, .filter-btn, .skill-tag').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
+  });
+
+  // ── Nav scroll ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Hero grid ──
+  const heroBg = document.getElementById('heroBg');
+  for (let i = 0; i < 36; i++) heroBg.appendChild(document.createElement('div'));
+
+  // ── Scroll reveal ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── Filter ──
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(card => {
+        const show = filter === 'all' || card.dataset.cat === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  // ── Modal ──
+  function openModal(id) {
+    const tpl = document.getElementById('tpl-' + id);
+    if (!tpl) return;
+    document.getElementById('modalContent').innerHTML = tpl.innerHTML;
+    document.getElementById('modalBackdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (id === 'goldsfield') {
+      requestAnimationFrame(() => setTimeout(initGoldSlideshow, 0));
+    }
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('modalBackdrop')) closeModalDirect();
+  }
+
+  function closeModalDirect() {
+    document.getElementById('modalBackdrop').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+  // ── Goldsfield slideshow ──
+  let goldIndex = 0;
+
+  function initGoldSlideshow() {
+    const modal     = document.getElementById('modalContent');
+    const slideshow = modal.querySelector('#goldsfieldSlideshow');
+    if (!slideshow) return;
+
+    const slides  = slideshow.querySelectorAll('.slide');
+    const nextBtn = slideshow.querySelector('.next');
+    const prevBtn = slideshow.querySelector('.prev');
+
+    goldIndex = 0;
+
+    function showSlide(i) {
+      slides.forEach(s => s.classList.remove('active'));
+      slides[i].classList.add('active');
+    }
+
+    showSlide(goldIndex);
+
+    nextBtn.onclick = () => {
+      goldIndex = (goldIndex + 1) % slides.length;
+      showSlide(goldIndex);
+    };
+
+    prevBtn.onclick = () => {
+      goldIndex = (goldIndex - 1 + slides.length) % slides.length;
+      showSlide(goldIndex);
+    };
+  }
+</script>
+
+</body>
+</html>
