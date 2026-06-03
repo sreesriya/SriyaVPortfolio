@@ -1263,31 +1263,42 @@ footer a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
 
-  /* ── Filter bar — scrolls horizontally instead of wrapping ── */
-  .filter-bar {
-    overflow-x:     auto;
-    flex-wrap:      nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;        /* hides scrollbar on Firefox */
+  /* ── General sections ── */
+  section {
+    padding: 4rem 1.25rem;
   }
 
-  .filter-bar::-webkit-scrollbar {
-    display: none;                /* hides scrollbar on Chrome/Safari */
+  #work {
+    padding-left:  0;
+    padding-right: 0;
   }
+
+  #work .section-header,
+  #work .filter-bar {
+    padding-left:  1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* ── Filter bar — horizontal scroll, no wrap ── */
+  .filter-bar {
+    overflow-x:    auto;
+    flex-wrap:     nowrap;
+    border-left:   none;
+    border-right:  none;
+    border-radius: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar { display: none; }
 
   .filter-btn {
-    flex:       0 0 auto;         /* stops buttons shrinking */
-    white-space: nowrap;          /* stops text wrapping inside button */
-    padding:    0.85rem 1.25rem;
+    flex:        0 0 auto;
+    white-space: nowrap;
+    padding:     0.85rem 1.1rem;
+    font-size:   0.7rem;
   }
 
-  /* ── Project grid — single column ── */
+  /* ── Project grid — full width single column ── */
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card.wide {
-    grid-column: span 1;
-  }
-
-}
+    grid-template
