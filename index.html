@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<!-- Grain filter — hidden SVG, no visual output -->
+<!-- Grain filter -->
 <svg style="position:absolute;width:0;height:0" aria-hidden="true">
   <defs>
     <filter id="grain">
@@ -67,7 +67,6 @@
     <span>Brand Identity</span><span class="dot">✦</span>
     <span>Visual Systems</span><span class="dot">✦</span>
     <span>Animation</span><span class="dot">✦</span>
-
   </div>
 </div>
 
@@ -83,18 +82,17 @@
   <div class="filter-bar reveal" id="filterBar">
     <button class="filter-btn active" data-filter="all"><span>All</span></button>
     <button class="filter-btn" data-filter="ux"><span>User Experience</span></button>
-    <button class="filter-btn" data-filter="typography"><span>Typography</span></button>
+    <!--<button class="filter-btn" data-filter="typography"><span>Typography</span></button>-->
     <button class="filter-btn" data-filter="brand-identity"><span>Brand Identity</span></button>
     <button class="filter-btn" data-filter="editorial"><span>Editorial</span></button>
     <button class="filter-btn" data-filter="animation"><span>Animation</span></button>
-
   </div>
 
   <!-- PROJECT GRID -->
   <div class="projects-grid" id="projectGrid">
 
     <!-- VIBE Lab -->
-    <div class="project-card reveal" data-cat="brand-identity typography"data-project="vibe"
+    <div class="project-card reveal" data-cat="brand-identity typography" data-project="vibe"
       onclick="openModal('vibe')">
       <div class="project-card-placeholder">
         <img class="project-card-img" src="images/VIBE/logo copy.jpg" alt="VIBE Lab">
@@ -104,12 +102,11 @@
         <p class="project-tag">Brand Identity</p>
         <h3 class="project-name">VIBE Lab</h3>
         <p class="project-desc">A newsletter for Designers to connect. This project showcases the branding for this project.</p>
-        <!--<button class="project-arrow" onclick="openModal('vibe')">→</button>-->
       </div>
     </div>
 
     <!-- Goldsfield -->
-    <div class="project-card wide reveal" data-cat="ux" data-project="goldsfield" 
+    <div class="project-card wide reveal" data-cat="ux" data-project="goldsfield"
        onclick="openModal('goldsfield')">
       <div class="project-card-placeholder">
         <img class="project-card-img" src="images/gold/TITLE SLIDE.png" alt="Goldfield">
@@ -119,7 +116,6 @@
         <p class="project-tag">User Experience</p>
         <h3 class="project-name">Goldsfield Ghost Town</h3>
         <p class="project-desc">A full digital redesign of an Old West destination—balancing modern UX with historic character.</p>
-        <!--button class="project-arrow" onclick="openModal('goldsfield')">→</button-->
       </div>
     </div>
 
@@ -130,33 +126,15 @@
         <img class="project-card-img" src="images/bottleriotcover.png" alt="Bottle Riot">
       </div>
       <span class="project-card-label">Brand Identity</span>
+      <div class="award-badge">
+        <span class="award-badge-title">Graphis 2023</span>
+        <span class="award-badge-sub">Honorable Mention</span>
+      </div>
       <div class="project-overlay">
         <p class="project-tag">Brand Identity</p>
         <h3 class="project-name">Bottle Riot</h3>
-        <p class="project-desc">A bold rebrand for an Asheville wine bar and listening lounge.</p>
+        <p class="project-desc">Honorable Mention — Graphis 2023. A bold rebrand for an Asheville wine bar and listening lounge.</p>
       </div>
-      <div class="project-card reveal" data-cat="brand-identity" data-project="bottleriot">
-  <div class="project-card-placeholder">
-    <img class="project-card-img" src="images/bottleriotcover.png" alt="Bottle Riot">
-  </div>
-
-  <!-- existing label — top left, stays exactly as is -->
-  <span class="project-card-label">Brand Identity</span>
-
-  <!-- award badge — top right, mirrors the label -->
-  <div class="award-badge">
-    <span class="award-badge-title">Graphis 2023</span>
-    <span class="award-badge-sub">Honorable Mention</span>
-  </div>
-
-  <!-- existing overlay — stays exactly as is -->
-  <div class="project-overlay">
-    <p class="project-tag">Brand Identity</p>
-    <h3 class="project-name">Bottle Riot</h3>
-    <p class="project-desc">Honorable Mention — Graphis 2023. A bold rebrand for an Asheville wine bar and listening lounge.</p>
-    <button class="project-arrow" onclick="openModal('bottleriot')">→</button>
-  </div>
-</div>
     </div>
 
     <!-- Urban Indian -->
@@ -170,7 +148,6 @@
         <p class="project-tag">Brand Identity</p>
         <h3 class="project-name">The Urban Indian</h3>
         <p class="project-desc">A contemporary fashion label fusing traditional Indian aesthetics with modern streetwear.</p>
-        <!--button class="project-arrow" onclick="openModal('urbanindian')">→</button-->
       </div>
     </div>
 
@@ -185,12 +162,11 @@
         <p class="project-tag">Animation · Print</p>
         <h3 class="project-name">Work — Risograph</h3>
         <p class="project-desc">A poster and animation created with a risograph, referencing Corita's 10 Rules.</p>
-        <!--button class="project-arrow" onclick="openModal('work')">→</button-->
       </div>
     </div>
 
     <!-- Jiayue Yu -->
-    <div class="project-card reveal" data-cat="editorial typography"data-project="ai"
+    <div class="project-card reveal" data-cat="editorial typography" data-project="ai"
       onclick="openModal('ai')">
       <div class="project-card-placeholder">
         <img class="project-card-img" src="images/Jiayue Yu/jiyayu mockup1.png" alt="Jiayue Yu">
@@ -200,7 +176,6 @@
         <p class="project-tag">Editorial Design · Typography</p>
         <h3 class="project-name">Jiayue Yu</h3>
         <p class="project-desc">An editorial publication exploring what it means for a short story to be authored by an AI.</p>
-        <!--button class="project-arrow" onclick="openModal('ai')">→</button-->
       </div>
     </div>
 
@@ -218,7 +193,6 @@
   <div class="about-section">
     <div class="about-visual reveal">
       <img src="images/Vem.png" alt="headshot">
-    
     </div>
     <div class="reveal">
       <div class="about-logo">
@@ -237,7 +211,6 @@
         <span class="skill-tag">Risograph</span>
         <span class="skill-tag">Visual Systems</span>
         <span class="skill-tag">Animation</span>
-
       </div>
     </div>
   </div>
@@ -272,11 +245,9 @@
 </div>
 
 
-<!-- ============================================================
-     MODAL TEMPLATES
-     ============================================================ -->
+<!-- MODAL TEMPLATES -->
 
-<!-- ── GOLDSFIELD ── -->
+<!-- GOLDSFIELD -->
 <template id="tpl-goldsfield">
   <div class="modal-header">
     <p class="modal-eyebrow">User Experience · 2025</p>
@@ -292,16 +263,10 @@
     <div class="modal-image-grid">
       <img src="images/gold/Persona 1.png" alt="Persona 1">
       <img src="images/gold/Persona 2.png" alt="Persona 2">
-      <!--<div class="placeholder">[ Add research/personas image ]</div>
-      <div class="placeholder">[ Add card sort or IA diagram ]</div>-->
     </div>
     <img src="images/gold/IA abstraction.png" alt="IA">
     <p class="modal-section-head">Design System</p>
     <p class="modal-text">The visual system leans on an earthy palette, layered textures, and type choices that nod to vintage Western signage—applied with modern typographic hierarchy and generous spacing. Component work included a responsive hero module with strong CTAs, an events calendar that prioritizes upcoming dates, modular attraction pages, and a compact ticketing summary that reduces friction.</p>
-    <div class="modal-image-grid">
-      <!--<div class="placeholder">[ Add UI mockup image ]</div>
-      <div class="placeholder">[ Add style guide or components ]</div>-->
-    </div>
     <div class="slideshow" id="goldsfieldSlideshow">
       <img class="slide active" src="images/gold/TITLE SLIDE.png" alt="Title">
       <img class="slide" src="images/gold/ORIGINAL ISSUES.png" alt="Original Issues">
@@ -315,13 +280,11 @@
       <button class="slide-btn prev">‹</button>
       <button class="slide-btn next">›</button>
     </div>
-    <div class="modal-image-grid"></div>
-    <img src>
     <a class="modal-link" href="https://www.figma.com/proto/eGUdyVUvu0KW5XrQGBx5IC/Untitled?node-id=2012-793&p=f&t=cxhqM2o90Qsh5JH5-1&scaling=scale-down&content-scaling=fixed&page-id=2012%3A568" target="_blank">View Figma Prototype →</a>
   </div>
 </template>
 
-<!-- ── BOTTLE RIOT ── -->
+<!-- BOTTLE RIOT -->
 <template id="tpl-bottleriot">
   <div class="modal-header">
     <p class="modal-eyebrow">Graphic Design · Brand Identity · 2025</p>
@@ -340,7 +303,6 @@
     <div class="modal-image-grid-br">
       <div class="img-stationary">
         <img src="images/BottleRiotStationary.jpg" alt="Stationary">
-        <!--<div class="overlay"></div>-->
       </div>
       <div class="img-logo">
         <img src="images/bottleriotlogo.png" alt="Logo">
@@ -351,7 +313,7 @@
   </div>
 </template>
 
-<!-- ── URBAN INDIAN ── -->
+<!-- URBAN INDIAN -->
 <template id="tpl-urbanindian">
   <div class="modal-header">
     <p class="modal-eyebrow">Graphic Design · Brand Identity · 2025</p>
@@ -364,14 +326,13 @@
     <p class="modal-text">A full brand identity redesign for The Urban Indian, a contemporary fashion label blending traditional Indian aesthetics with modern streetwear. The goal was to design a brand system that celebrated cultural heritage while feeling bold, versatile, and relevant to a global urban audience. Deliverables included three brand boards with at least seven applications of the branding.</p>
     <p class="modal-section-head">Research &amp; Discovery</p>
     <p class="modal-text">The research began with an audit of fashion and lifestyle brands that fuse culture with modernity. I studied Indian textiles, block-printing motifs, and multilingual typographic traditions. From this, I defined three key design principles: Cultural authenticity, Modern accessibility, and Scalable adaptability.</p>
-    
     <img src="images/tui1.jpg" alt="Urban Indian board 1" style="margin-top: 2rem;">
-    <img src="images/tui2.jpg" alt="Urban Indian board 2" >
+    <img src="images/tui2.jpg" alt="Urban Indian board 2">
     <img src="images/tui3.jpg" alt="Urban Indian board 3">
   </div>
 </template>
 
-<!-- ── WORK / RISOGRAPH ── -->
+<!-- WORK / RISOGRAPH -->
 <template id="tpl-work">
   <div class="modal-header">
     <p class="modal-eyebrow">Animation · Print · 2025</p>
@@ -388,12 +349,11 @@
     <p class="modal-text">This project introduced me to several new Photoshop techniques and workflows. The animation was first created in Adobe After Effects, where I developed the movement and timing of the circular forms. Individual frames were then arranged in Photoshop and separated into two color channels to prepare them for risograph printing. Through this process, I learned how digital motion design can be translated into a physical print medium while maintaining consistency across both formats.</p>
     <video class="modal-video" src="images/work.mp4" autoplay loop muted playsinline></video>
     <img src="images/work animation.png">
-    </div>
     <a class="modal-link" href="https://www.corita.org/tenrules" target="_blank">Corita's 10 Rules →</a>
   </div>
 </template>
 
-<!-- ── JIAYUE YU (book viewer) ── -->
+<!-- JIAYUE YU -->
 <template id="tpl-ai">
   <div class="modal-header">
     <p class="modal-eyebrow">Editorial · 2022</p>
@@ -403,11 +363,11 @@
   <div class="modal-body">
     <p class="modal-section-head">Project Outline</p>
     <p class="modal-text">This editorial project is a visual artist feature focused on Jiayue Yu, a multidisciplinary artist working across photography, 3D rendering, and video. It is a three spread magazine feature. We are challenged to create something beyond our previous design skill.</p>
-    <p class="modal-section-head">Reaserch</p>
-    <p class="modal-text">Research began with studying Jiayue Yu’s projects, artist statements, and published interviews to understand her core themes: fatigue, desire, uncertainty, and how they appear in everyday urban and social spaces. Her work often blends constructed imagery with real environments, creating a tension between reality and simulation.
+    <p class="modal-section-head">Research</p>
+    <p class="modal-text">Research began with studying Jiayue Yu's projects, artist statements, and published interviews to understand her core themes: fatigue, desire, uncertainty, and how they appear in everyday urban and social spaces. Her work often blends constructed imagery with real environments, creating a tension between reality and simulation.
 I analyzed her series-based structure (such as In Retrospect and Worn Out Joy) to understand how she builds narrative across bodies of work. This informed the editorial pacing—alternating between dense written sections and full-bleed imagery to reflect her layered, reflective approach.
 Sketches and layout tests focused on hierarchy, readability, and rhythm between image and text. I explored how spacing and repetition could mirror her conceptual focus on repetition, memory, and emotional residue.</p>
-    <p class="modal-section-head">Deisgn Direction</p>
+    <p class="modal-section-head">Design Direction</p>
     <p class="modal-text">The design is minimal and editorial, using black text with blue accents for quotes and highlights. The title page features her name repeated in a soft blue gradient to reflect themes of repetition and memory.
 The layout is split between text and imagery, allowing her work to remain central while supporting context stays clean and structured.</p>
     <div class="bk-viewer" id="bkViewer">
@@ -436,14 +396,14 @@ The layout is split between text and imagery, allowing her work to remain centra
       </div>
       <span class="bk-page-lbl" id="bkLbl">Spread 1</span>
     </div>
-        <div class="modal-image-grid">
-    <img src="images/Jiayue Yu/zoom1.png">
-    <img src="images/Jiayue Yu/zoom2.png">
+    <div class="modal-image-grid">
+      <img src="images/Jiayue Yu/zoom1.png">
+      <img src="images/Jiayue Yu/zoom2.png">
     </div>
   </div>
 </template>
 
-<!-- ── VIBE LAB ── -->
+<!-- VIBE LAB -->
 <template id="tpl-vibe">
   <div class="modal-header">
     <p class="modal-eyebrow">Brand Identity · 2025</p>
@@ -452,29 +412,24 @@ The layout is split between text and imagery, allowing her work to remain centra
   </div>
   <div class="modal-body">
     <img src="images/VIBE/vibe.jpg" alt="vibe">
-    <p class="modal-section-head">Project goals</p>
-    <p class="modal-text">The goal of Vibe Lab’s brand identity was to create a visual and emotional system that supports emerging creatives. The intention was to design something that feels like a calm, supportive entry point into the design world. The brand needed to communicate encouragement and softness while still feeling credible enough to host resources such as job opportunities, references, and design insights. Another major goal was to build a system that could scale across editorial content in the form of newsletters, social media posts and magazines.
-.</p>
-     <p class="modal-section-head">Research</p>
+    <p class="modal-section-head">Project Goals</p>
+    <p class="modal-text">The goal of Vibe Lab's brand identity was to create a visual and emotional system that supports emerging creatives. The intention was to design something that feels like a calm, supportive entry point into the design world. The brand needed to communicate encouragement and softness while still feeling credible enough to host resources such as job opportunities, references, and design insights. Another major goal was to build a system that could scale across editorial content in the form of newsletters, social media posts and magazines.</p>
+    <p class="modal-section-head">Research</p>
     <p class="modal-text">The research focused on how creative communities and design-focused social spaces currently operate, and where they often create pressure instead of support. Many existing platforms rely on highly polished, dense, or trend-driven visuals that can unintentionally reinforce comparison and burnout. This led to reframing Vibe Lab as more of an emotional and creative environment rather than a traditional brand system. Inspiration was pulled from editorial design, zines, and collage-based layouts, where layering, imperfection, and variation create warmth and authenticity while still maintaining a sense of structure.</p>
-         <p class="modal-section-head">Design direction</p>
+    <p class="modal-section-head">Design Direction</p>
     <p class="modal-text">The final design direction is built around a flexible collage system that prioritizes variation within consistency. Instead of fixed templates, layouts adapt depending on content, while cohesion is maintained through recurring visual elements like a pastel palette derived from the logo and soft paper textures that add tactility and warmth. Typography is intentionally restrained to support clarity and emotional ease, allowing composition and imagery to lead. The overall system reflects the core idea of Vibe Lab: creativity is fluid, personal, and evolving, and the identity should feel the same way.</p>
-         <p class="modal-section-head">First Instagram Post:</p>
+    <p class="modal-section-head">First Instagram Post:</p>
     <div class="modal-image-grid">
-      <img src="images/VIBE/post_oct_22-11 copy.jpg" >
-      <img src="images/VIBE/post_oct_22-12 copy.jpg" >
-      <img src="images/VIBE/post_oct_22-13 copy.jpg" >
-      <img src="images/VIBE/post_oct_22-14 copy.jpg" >
-
-      
+      <img src="images/VIBE/post_oct_22-11 copy.jpg">
+      <img src="images/VIBE/post_oct_22-12 copy.jpg">
+      <img src="images/VIBE/post_oct_22-13 copy.jpg">
+      <img src="images/VIBE/post_oct_22-14 copy.jpg">
     </div>
   </div>
 </template>
 
 
-<!-- ============================================================
-     SCRIPTS
-     ============================================================ -->
+<!-- SCRIPTS -->
 <script>
 
   // ── Cursor ──────────────────────────────────────────────────
@@ -487,6 +442,18 @@ The layout is split between text and imagery, allowing her work to remain centra
     el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
   });
+  
+  if (window.matchMedia('(pointer: fine)').matches) {
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top  = e.clientY + 'px';
+  });
+  document.querySelectorAll('a, button, .project-card, .filter-btn, .skill-tag').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
+  });
+}
 
   // ── Nav scroll ───────────────────────────────────────────────
   const navbar = document.getElementById('navbar');
@@ -495,68 +462,67 @@ The layout is split between text and imagery, allowing her work to remain centra
   });
 
   // ── Hero grid ────────────────────────────────────────────────
-const heroBg = document.getElementById('heroBg');
-for (let i = 0; i < 36; i++) heroBg.appendChild(document.createElement('div'));
+  const heroBg = document.getElementById('heroBg');
+  for (let i = 0; i < 36; i++) heroBg.appendChild(document.createElement('div'));
 
-// ── Hero scroll-linked typography ────────────────────────────
-const heroName = document.querySelector('.hero-name');
-const heroSub  = document.querySelector('.hero-sub');
-const heroEye  = document.querySelector('.hero-eyebrow');
+  // ── Hero scroll-linked typography ────────────────────────────
+  const heroName = document.querySelector('.hero-name');
+  const heroSub  = document.querySelector('.hero-sub');
+  const heroEye  = document.querySelector('.hero-eyebrow');
 
-let currentScale   = 1;
-let currentOpacity = 1;
-let targetScale    = 1;
-let targetOpacity  = 1;
-let rafId;
-let currentYOffset = 0;
-let targetYOffset = 0;
+  let currentScale   = 1;
+  let currentOpacity = 1;
+  let targetScale    = 1;
+  let targetOpacity  = 1;
+  let rafId;
+  let currentYOffset = 0;
+  let targetYOffset = 0;
 
-// Wait for the entry animation to finish before handing control to JS
-// The hero-name fadeup animation has a 0.5s delay + 1s duration = 1.5s total
-setTimeout(() => {
-  heroName.style.animation = 'none';   // ← stop CSS fighting JS
-  heroSub.style.animation  = 'none';
-  heroEye.style.animation  = 'none';
-  // Lock in fully visible state as the JS starting point
-  heroName.style.opacity = '1';
-  heroSub.style.opacity  = '1';
-  heroEye.style.opacity  = '1';
-}, 1600);
+  // Wait for entry animation to finish (0.5s delay + 1s duration = 1.5s total)
+  setTimeout(() => {
+    heroName.style.animation = 'none';
+    heroSub.style.animation  = 'none';
+    heroEye.style.animation  = 'none';
+    heroName.style.opacity = '1';
+    heroSub.style.opacity  = '1';
+    heroEye.style.opacity  = '1';
+  }, 1600);
 
-function lerp(a, b, t) { return a + (b - a) * t; }
+  function lerp(a, b, t) { return a + (b - a) * t; }
 
-function tickHero() {
-  currentScale   = lerp(currentScale,   targetScale,   0.08);
-  currentOpacity = lerp(currentOpacity, targetOpacity, 0.08);
-  currentYOffset = lerp(currentYOffset, targetYOffset, 0.08);
+  function tickHero() {
+    currentScale   = lerp(currentScale,   targetScale,   0.08);
+    currentOpacity = lerp(currentOpacity, targetOpacity, 0.08);
+    currentYOffset = lerp(currentYOffset, targetYOffset, 0.08);
 
-  heroName.style.transform       = `scale(${currentScale})`;
-  heroName.style.transformOrigin = 'left bottom';
-  heroName.style.opacity         = currentOpacity;
-  heroSub.style.opacity          = currentOpacity * 0.85;
-  heroEye.style.opacity          = currentOpacity * 0.7;
-  heroEye.style.transform = `translateY(${-currentYOffset}px)`;
+    heroName.style.transform       = `scale(${currentScale})`;
+    heroName.style.transformOrigin = 'left bottom';
+    heroName.style.opacity         = currentOpacity;
+    heroSub.style.opacity          = currentOpacity * 0.85;
+    heroEye.style.opacity          = currentOpacity * 0.7;
+    heroEye.style.transform = `translateY(${-currentYOffset}px)`;
 
-  if (
-    Math.abs(currentScale   - targetScale)   > 0.001 ||
-    Math.abs(currentOpacity - targetOpacity) > 0.001
-  ) {
-    rafId = requestAnimationFrame(tickHero);
+    if (
+      Math.abs(currentScale   - targetScale)   > 0.001 ||
+      Math.abs(currentOpacity - targetOpacity) > 0.001
+    ) {
+      rafId = requestAnimationFrame(tickHero);
+    }
   }
-}
 
-window.addEventListener('scroll', () => {
-  const hero     = document.querySelector('.hero');
-  const heroH    = hero.offsetHeight;
-  const progress = Math.min(window.scrollY / (heroH * 0.6), 1);
+  window.addEventListener('scroll', () => {
+    const hero     = document.querySelector('.hero');
+    const heroH    = hero.offsetHeight;
+    const progress = Math.min(window.scrollY / (heroH * 0.6), 1);
 
-  targetScale   = 1 + (progress * 1.18);
-  targetOpacity = 1 - (progress * 0.75);
-  targetYOffset = progress * 200;
+    targetScale   = 1 + (progress * 1.18);
+    targetOpacity = 1 - (progress * 0.75);
+    targetYOffset = progress * 200;
 
-  cancelAnimationFrame(rafId);
-  rafId = requestAnimationFrame(tickHero);
-}, { passive: true });
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(tickHero);
+  }, { passive: true });
+
   // ── Scroll reveal ────────────────────────────────────────────
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
@@ -570,17 +536,17 @@ window.addEventListener('scroll', () => {
 
   // ── Filter ───────────────────────────────────────────────────
   document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    document.querySelectorAll('.project-card').forEach(card => {
-      const cats = card.dataset.cat.split(' ');  // ← splits "brand-identity typography" into array
-      const show = filter === 'all' || cats.includes(filter);
-      card.classList.toggle('hidden', !show);
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(card => {
+        const cats = card.dataset.cat.split(' ');
+        const show = filter === 'all' || cats.includes(filter);
+        card.classList.toggle('hidden', !show);
+      });
     });
   });
-});
 
   // ── Modal ────────────────────────────────────────────────────
   function openModal(id) {
