@@ -354,6 +354,7 @@ section { padding: 6rem 3rem; }
   filter:    brightness(0.8);
 }
 
+
 .project-card-placeholder {
   position: absolute;
   inset:    0;
@@ -1326,6 +1327,7 @@ footer a:hover { color: var(--accent); }
     margin-left: 0;
     padding: 0;
   }
+  
 
   .project-card,
   .project-card.wide {
@@ -1381,6 +1383,7 @@ footer a:hover { color: var(--accent); }
 }
 
 }
+
 
 .card-wrap {
   width:       510px;
