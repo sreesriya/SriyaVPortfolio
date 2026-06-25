@@ -1425,8 +1425,8 @@ footer a:hover { color: var(--accent); }
 
   /* ── Business card scales to fit screen ── */
   .card-wrap {
-    width:  80vw;
-    height: calc(80vw * 0.56);  /* 0.56 = standard card ratio 3.5:2 */
+    width:  70vw;
+    height: calc(70vw * 0.56);  /* 0.56 = standard card ratio 3.5:2 */
     margin: 2rem auto;
   }
 
