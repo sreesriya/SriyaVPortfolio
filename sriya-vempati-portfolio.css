@@ -34,6 +34,20 @@
 /* ── DESIGN TOKENS ──────────────────────────────────────── */
 
 :root {
+   --bg:      #F5F3EE;
+  --bg2:     #EDEAE3;
+  --ink:     #441200;
+  --ink2:    #5A5650;
+  --ink3:    #9A9590;
+  --accent:  #C4562A;
+  --accent2: #E8A87C;
+  --line:    rgba(26, 24, 20, 0.12);
+
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+
+  --trans: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /*
   --bg:      #f5f1ee;
   --bg2:     #ede8e3;
   --ink:     #031e54;
@@ -47,6 +61,7 @@
   --sans:  'DM Sans', system-ui, sans-serif;
 
   --trans: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  */
 }
 
 
